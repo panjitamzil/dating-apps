@@ -1,0 +1,19 @@
+[Application]
+  ServiceName = dating-apps-service
+  Port        = :8080
+
+[Database]
+  Host                  = 127.0.0.1
+  Port                  = 5432
+  User                  = 
+  Password              = 
+  Name                  = dating_apps
+  MaxIdleConnection     = 10
+	MaxOpenConnection     = 100
+	MaxLifetimeConnection = 60
+	MaxIdletimeConnection = 60
+
+[Redis]
+  Host      = localhost
+  Port      = 6379
+  Password  = 
