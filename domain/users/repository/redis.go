@@ -2,7 +2,6 @@ package repository
 
 import (
 	"context"
-	"dating-apps/helpers"
 	"fmt"
 	"reflect"
 	"time"
@@ -16,15 +15,6 @@ func (r *Repo) SetKey(key, value string) error {
 	}
 
 	return nil
-}
-
-func (r *Repo) GetKey(key string) (string, error) {
-	result, err := r.redis.Get(context.Background(), key).Result()
-	if err != nil {
-		return helpers.EMPTY, err
-	}
-
-	return result, nil
 }
 
 func (r *Repo) Exist(key string) (int64, error) {

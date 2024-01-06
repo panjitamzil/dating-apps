@@ -9,7 +9,6 @@ type RepoInterface interface {
 	UpdateProfile(req model.User) error
 
 	SetKey(key, value string) error
-	GetKey(key string) (string, error)
 	Exist(key string) (int64, error)
 	GetKeys(key, email string) (int, error)
 }

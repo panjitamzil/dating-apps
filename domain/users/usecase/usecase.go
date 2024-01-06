@@ -98,6 +98,18 @@ func (s *Service) Swipe(email, idTarget, action, subscription string) error {
 		return errors.New(helpers.ERR_SWIPE)
 	}
 
+	// Check users info
+	_, err = s.UserRepo.SelectByCondition(&model.User{
+		Id: idTarget,
+	})
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return errors.New(helpers.ERR_NOT_FOUND)
+		}
+
+		return errors.New(helpers.ERR_GET_INFO + ":" + err.Error())
+	}
+
 	// Check total swipe
 	total, err := s.UserRepo.GetKeys(key, email)
 	if err != nil {
