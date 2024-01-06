@@ -9,9 +9,9 @@
   Password              = 
   Name                  = dating_apps
   MaxIdleConnection     = 10
-	MaxOpenConnection     = 100
-	MaxLifetimeConnection = 60
-	MaxIdletimeConnection = 60
+  MaxOpenConnection     = 100
+  MaxLifetimeConnection = 60
+  MaxIdletimeConnection = 60
 
 [Redis]
   Host      = localhost
