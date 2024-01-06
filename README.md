@@ -1,6 +1,14 @@
 # dating-apps
 Explore the heart of our Dating App with this Golang-based REST API repository
 
+## Stacks
+1. Golang
+2. Gin Framework
+3. Redis
+4. PostgreSQL
+5. JWT Token
+6. Domain Driven Design (DDD) code structure
+
 ## How to run 
 1. Set up your database configuration (username and password) on `config.toml`
 ```
@@ -11,9 +19,9 @@ Explore the heart of our Dating App with this Golang-based REST API repository
   Password              = 
   Name                  = dating_apps
   MaxIdleConnection     = 10
-	MaxOpenConnection     = 100
-	MaxLifetimeConnection = 60
-	MaxIdletimeConnection = 60
+  MaxOpenConnection     = 100
+  MaxLifetimeConnection = 60
+  MaxIdletimeConnection = 60
 ```
 
 2. Run `go mod tidy` to update the dependencies
@@ -29,7 +37,7 @@ CREATE TABLE IF NOT EXIST users (
 	fullname varchar(100),
 	dob date,
 	occupation varchar(100),
-  subscription varchar(20),
+  	subscription varchar(20),
 	created_at timestamp,
 	updated_at timestamp,
 	deleted_at timestamp,
