@@ -1,7 +1,7 @@
-# dating-apps
+# Dating Apps API 💙
 Explore the heart of our Dating App with this Golang-based REST API repository
 
-## Stacks
+## Stacks 🧑🏻‍💻
 1. Golang
 2. Gin Framework
 3. Redis
@@ -9,7 +9,7 @@ Explore the heart of our Dating App with this Golang-based REST API repository
 5. JWT Token
 6. Domain Driven Design (DDD) code structure
 
-## How to run 
+## How to run 🚀
 1. Set up your database configuration (username and password) on `config.toml`
 ```
 [Database]
