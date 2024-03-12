@@ -16,6 +16,8 @@ func main() {
 		panic(err)
 	}
 
+	fmt.Println("Config Initialized")
+
 	// Connect to database
 	db, err := config.InitDatabase(cfg)
 	if err != nil {
